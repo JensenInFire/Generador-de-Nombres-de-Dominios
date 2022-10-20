@@ -1,11 +1,20 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  let pronoun = ["el", "nuestro"];
+  let adj = ["fantastico", "gran", "glorioso"];
+  let noun = ["silbon", "jugador"];
+  let point = [".com", ".net", ".ve", ".es"];
+
+  let pagesNames = () => {
+    for (let pronouns of pronoun) {
+      for (let adjs of adj) {
+        for (let nouns of noun) {
+          for (let points of point) {
+            console.log(pronouns + adjs + nouns + points);
+          }
+        }
+      }
+    }
+  };
+  pagesNames();
 };
